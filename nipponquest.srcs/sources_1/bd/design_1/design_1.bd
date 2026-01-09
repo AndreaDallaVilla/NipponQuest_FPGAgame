@@ -1,0 +1,65 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../nipponquest.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "audio_clock_recovery_0": "",
+      "audio_formatter_0": ""
+    },
+    "components": {
+      "audio_clock_recovery_0": {
+        "vlnv": "xilinx.com:ip:audio_clock_recovery_unit:1.0",
+        "xci_name": "design_1_audio_clock_recovery_0_0",
+        "xci_path": "ip\\design_1_audio_clock_recovery_0_0\\design_1_audio_clock_recovery_0_0.xci",
+        "inst_hier_path": "audio_clock_recovery_0"
+      },
+      "audio_formatter_0": {
+        "vlnv": "xilinx.com:ip:audio_formatter:1.0",
+        "xci_name": "design_1_audio_formatter_0_0",
+        "xci_path": "ip\\design_1_audio_formatter_0_0\\design_1_audio_formatter_0_0.xci",
+        "inst_hier_path": "audio_formatter_0",
+        "interface_ports": {
+          "m_axi_mm2s": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "m_axi_mm2s",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFFFFFFFFFF",
+              "width": "64"
+            }
+          },
+          "m_axi_s2mm": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "m_axi_s2mm",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0xFFFFFFFFFFFFFFFF",
+              "width": "64"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "m_axi_mm2s": {
+              "range": "16E",
+              "width": "64"
+            },
+            "m_axi_s2mm": {
+              "range": "16E",
+              "width": "64"
+            }
+          }
+        }
+      }
+    }
+  }
+}

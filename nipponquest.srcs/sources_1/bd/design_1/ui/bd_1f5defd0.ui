@@ -1,0 +1,14 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"-316,-130",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst audio_clock_recovery_0 -pg 1 -lvl 2 -x 450 -y 50 -defaultsOSRD
+preplace inst audio_formatter_0 -pg 1 -lvl 1 -x 150 -y -90 -defaultsOSRD
+levelinfo -pg 1 -10 150 450 600
+pagesize -pg 1 -db -bbox -sgen -10 -240 600 510
+"
+}
+

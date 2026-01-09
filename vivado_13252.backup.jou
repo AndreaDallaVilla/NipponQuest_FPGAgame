@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Jun 25 10:14:12 2025
+# Process ID: 13252
+# Current directory: C:/esvhdl/nipponquestV3/nipponquestV1-20250319T175825Z-001/nipponquestV1/nipponquest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22296 C:\esvhdl\nipponquestV3\nipponquestV1-20250319T175825Z-001\nipponquestV1\nipponquest\nipponquest.xpr
+# Log file: C:/esvhdl/nipponquestV3/nipponquestV1-20250319T175825Z-001/nipponquestV1/nipponquest/vivado.log
+# Journal file: C:/esvhdl/nipponquestV3/nipponquestV1-20250319T175825Z-001/nipponquestV1/nipponquest\vivado.jou
+# Running On: DallaVilla, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16948 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/esvhdl/nipponquestV3/nipponquestV1-20250319T175825Z-001/nipponquestV1/nipponquest/nipponquest.xpr
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:audio_clock_recovery_unit:1.0 audio_clock_recovery_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:audio_formatter:1.0 audio_formatter_0
+endgroup
+open_run synth_1 -name synth_1
+save_bd_design
+open_run impl_1
+generate_target all [get_files  C:/esvhdl/nipponquestV3/nipponquestV1-20250319T175825Z-001/nipponquestV1/nipponquest/nipponquest.srcs/sources_1/bd/design_1/design_1.bd]
+current_design synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+current_design impl_1
+report_utilization -name utilization_1
