@@ -1,0 +1,6 @@
+# Vivado artifacts
+nipponquest.runs/
+*.jou
+*.log
+vivado_pid*.str
+*.str
