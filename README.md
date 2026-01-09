@@ -1,10 +1,11 @@
 # NipponQuest_FPGAgame
-game with the Nexys 4 DDR board
-
 Nippon Quest is a VGA-based video game in which the player controls a character represented by a 50×50 pixel square moving across a series of horizontal platforms.
 The objective is to jump from one platform to another while avoiding the gaps between them. The vertical movement of the character is controlled by the player’s voice.
 
 The name Nippon Quest (meaning “Japan Quest”) originates from a passion for Japan and from inspiration taken from a Japanese video game with similar mechanics.
+
+## Board
+Nexys 4 DDR
 
 ## Gameplay Mechanics
 
